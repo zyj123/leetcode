@@ -5,7 +5,6 @@ class Solution:
         :rtype: str
         """
         s = '1'
-
         for _ in range(n-1):
             res = [0, s[:1]]
             for i in s:
@@ -18,9 +17,6 @@ class Solution:
             s = ''.join(map(str, res))
         return s
 
-
-
 obj = Solution()
 res = obj.countAndSay(6)
-
 print(res)
